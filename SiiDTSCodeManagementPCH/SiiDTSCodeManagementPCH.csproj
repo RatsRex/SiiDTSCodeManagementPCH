@@ -90,11 +90,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Build - Debug.cmd" />
-    <None Include="Build - Release.cmd" />
+    <None Include="Build-Debug.cmd" />
+    <None Include="Build-Release.cmd" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Readme.md" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
