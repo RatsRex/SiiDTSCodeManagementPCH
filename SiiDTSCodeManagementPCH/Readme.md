@@ -1,4 +1,4 @@
-﻿Buid without Visual studio
+﻿Build without Visual studio
 
 1. Download standalone nuget manager nuget.exe from https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
 2. Update PATH env variable with nuget download folder path
