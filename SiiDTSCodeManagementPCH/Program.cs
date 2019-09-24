@@ -5,8 +5,8 @@ using System.Linq;
 using System.Text;
 using Newtonsoft.Json;
 using System.Threading.Tasks;
-using LiteDB;
 using Serilog;
+using LiteDB;
 
 namespace SiiDTSCodeManagementPCH
 {
@@ -129,9 +129,9 @@ namespace SiiDTSCodeManagementPCH
 
             Log.CloseAndFlush();
 
-            //Console.WriteLine("---------------------------------------------");
-            //Console.WriteLine("Press Any Key");
-            //Console.ReadKey();
+            Console.WriteLine("---------------------------------------------");
+            Console.WriteLine("Press Any Key");
+            Console.ReadKey();
         }
     }
 }

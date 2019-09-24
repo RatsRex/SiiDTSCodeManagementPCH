@@ -8,9 +8,9 @@ namespace SiiDTSCodeManagementPCH
 {
     class LogEntryExt : LogEntry, ILogEntry
     {
-        public string type { get; set; }
-        public string host { get; set; }
+        //public string type { get; set; }
+        //public string host { get; set; }
 
-        
+
     }
 }
