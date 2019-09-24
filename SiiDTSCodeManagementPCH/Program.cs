@@ -129,9 +129,9 @@ namespace SiiDTSCodeManagementPCH
 
             Log.CloseAndFlush();
 
-            Console.WriteLine("---------------------------------------------");
-            Console.WriteLine("Press Any Key");
-            Console.ReadKey();
+            //Console.WriteLine("---------------------------------------------");
+            //Console.WriteLine("Press Any Key");
+            //Console.ReadKey();
         }
     }
 }
