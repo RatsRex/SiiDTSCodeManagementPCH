@@ -2,11 +2,10 @@
 using System.IO;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Newtonsoft.Json;
-using System.Threading.Tasks;
 using Serilog;
 using LiteDB;
+using System.Threading;
 
 namespace SiiDTSCodeManagementPCH
 {
@@ -24,7 +23,6 @@ namespace SiiDTSCodeManagementPCH
             const string LOG_FILENAME = "AppLog.log";
 
             //Serilog preparation
-
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Information()
                 .WriteTo.Console()
@@ -39,6 +37,7 @@ namespace SiiDTSCodeManagementPCH
             catch (Exception)
             {
                 Log.Error("Required source file parameter has not been provided");
+                Thread.Sleep(10000);
                 return;
             }
             
@@ -46,6 +45,7 @@ namespace SiiDTSCodeManagementPCH
             {
                 //System.Diagnostics.Debug.WriteLine("{0:yyyy.mm.dd HH.mm.ss.ffffff} : ERR : FILE_DO_NOT_EXIST : {1} ", DateTime.Now, sFilePath);
                 Log.Error("Input file doesn't exist", sFilePath);
+                Thread.Sleep(10000);
                 return ;
             }
 
@@ -128,10 +128,9 @@ namespace SiiDTSCodeManagementPCH
             }
 
             Log.CloseAndFlush();
+            Thread.Sleep(10000);
 
-            Console.WriteLine("---------------------------------------------");
-            Console.WriteLine("Press Any Key");
-            Console.ReadKey();
+            
         }
     }
 }
