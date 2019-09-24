@@ -90,7 +90,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Build.cmd" />
+    <None Include="Build - Debug.cmd" />
+    <None Include="Build - Release.cmd" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -107,9 +108,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="bin\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Input.txt" />
     <Content Include="test\Input.txt" />
